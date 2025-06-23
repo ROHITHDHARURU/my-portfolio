@@ -72,24 +72,6 @@ export const Projects = () => {
                   </span>
                 ))}
               </div>
-              
-              <div className="flex gap-3">
-                <Button 
-                  size="sm" 
-                  className="flex-1 bg-slate-900 hover:bg-slate-800"
-                >
-                  <Link className="w-4 h-4 mr-2" />
-                  View Details
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="flex-1"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  Source Code
-                </Button>
-              </div>
             </div>
           ))}
         </div>
