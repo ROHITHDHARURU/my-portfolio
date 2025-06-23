@@ -38,7 +38,7 @@ export const About = () => {
           <div className="relative">
             <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl shadow-xl overflow-hidden">
               <img 
-                src="/profile-photo.jpg" 
+                src="/lovable-uploads/2cca9ee4-f36f-4c07-8426-6cd159de23ba.png" 
                 alt="Rohith Dharuru" 
                 className="w-full h-full object-cover"
               />
