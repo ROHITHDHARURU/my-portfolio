@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -14,7 +15,7 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
           <p className="text-lg text-slate-600 mt-6 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I'm always open to discussing new opportunities, interesting projects, or collaborating on innovative solutions.
           </p>
         </div>
         
@@ -22,34 +23,34 @@ export const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Let's Connect</h3>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    📧
+                    <Mail className="w-5 h-5 text-blue-600" />
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Email</p>
-                    <p className="text-slate-600">john.doe@example.com</p>
+                    <p className="text-slate-600">dharururohith@gmail.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    📱
+                    <Phone className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Phone</p>
-                    <p className="text-slate-600">+1 (555) 123-4567</p>
+                    <p className="text-slate-600">518-212-0604</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                    📍
+                    <MapPin className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Location</p>
-                    <p className="text-slate-600">San Francisco, CA</p>
+                    <p className="text-slate-600">Albany, NY</p>
                   </div>
                 </div>
               </div>
@@ -57,13 +58,15 @@ export const Contact = () => {
             
             <div className="flex space-x-4">
               <Button variant="outline" size="lg" className="flex-1">
+                <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </Button>
               <Button variant="outline" size="lg" className="flex-1">
-                GitHub
+                <Mail className="w-4 h-4 mr-2" />
+                Email Me
               </Button>
               <Button variant="outline" size="lg" className="flex-1">
-                Twitter
+                Download CV
               </Button>
             </div>
           </div>
@@ -75,22 +78,22 @@ export const Contact = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" className="mt-2" />
+                    <Input id="firstName" placeholder="Your first name" className="mt-2" />
                   </div>
                   <div>
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" className="mt-2" />
+                    <Input id="lastName" placeholder="Your last name" className="mt-2" />
                   </div>
                 </div>
                 
                 <div>
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" className="mt-2" />
+                  <Input id="email" type="email" placeholder="your.email@example.com" className="mt-2" />
                 </div>
                 
                 <div>
                   <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Let's work together!" className="mt-2" />
+                  <Input id="subject" placeholder="Project collaboration opportunity" className="mt-2" />
                 </div>
                 
                 <div>
@@ -98,7 +101,7 @@ export const Contact = () => {
                   <textarea 
                     id="message"
                     rows={5}
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me about your project or opportunity..."
                     className="mt-2 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                   />
                 </div>

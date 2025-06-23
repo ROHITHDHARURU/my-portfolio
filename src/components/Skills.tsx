@@ -2,30 +2,39 @@
 export const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 85 },
-        { name: "Next.js", level: 80 }
-      ]
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: "Node.js", level: 90 },
+        { name: "Java", level: 95 },
+        { name: "JavaScript", level: 90 },
         { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 75 }
+        { name: "C/C++", level: 80 }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Frameworks & Technologies", 
+      skills: [
+        { name: "Spring Framework", level: 95 },
+        { name: "React.js", level: 90 },
+        { name: "Spring Boot", level: 90 },
+        { name: "Redux", level: 85 }
+      ]
+    },
+    {
+      title: "Databases & Cloud",
+      skills: [
+        { name: "Oracle", level: 90 },
+        { name: "MySQL", level: 85 },
+        { name: "AWS", level: 85 },
+        { name: "MongoDB", level: 80 }
+      ]
+    },
+    {
+      title: "DevOps & Tools",
       skills: [
         { name: "Git", level: 95 },
+        { name: "Jenkins", level: 85 },
         { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Figma", level: 70 }
+        { name: "Kubernetes", level: 75 }
       ]
     }
   ];
@@ -35,21 +44,21 @@ export const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Skills
+            Skills & Technologies
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">{category.title}</h3>
-              <div className="space-y-6">
+            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 text-center">{category.title}</h3>
+              <div className="space-y-4">
                 {category.skills.map((skill, i) => (
                   <div key={i}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-slate-700">{skill.name}</span>
-                      <span className="text-slate-500 text-sm">{skill.level}%</span>
+                      <span className="font-medium text-slate-700 text-sm">{skill.name}</span>
+                      <span className="text-slate-500 text-xs">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-slate-200 rounded-full h-2">
                       <div 

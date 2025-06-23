@@ -17,14 +17,14 @@ export const Hero = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-6">
-            John Doe
+            Rohith Dharuru
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 mb-4 font-medium">
-            Full Stack Developer
+            Full Stack Software Engineer
           </p>
           <p className="text-lg text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating exceptional digital experiences through clean code, 
-            innovative solutions, and user-centered design.
+            Results-driven engineer with 4+ years of experience in designing and developing 
+            scalable applications using Java, Spring, React, and cloud technologies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
