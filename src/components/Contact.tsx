@@ -6,6 +6,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export const Contact = () => {
+  const handleLinkedInClick = () => {
+    window.open('https://www.linkedin.com/in/rohith17899/', '_blank');
+  };
+
+  const handleEmailClick = () => {
+    window.open('mailto:dharururohith@gmail.com', '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -57,11 +65,21 @@ export const Contact = () => {
             </div>
             
             <div className="flex space-x-4">
-              <Button variant="outline" size="lg" className="flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex-1"
+                onClick={handleLinkedInClick}
+              >
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </Button>
-              <Button variant="outline" size="lg" className="flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex-1"
+                onClick={handleEmailClick}
+              >
                 <Mail className="w-4 h-4 mr-2" />
                 Email Me
               </Button>
